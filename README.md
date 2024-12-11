@@ -8,6 +8,7 @@ This script is designed for brute-forcing SMB credentials as part of ethical hac
 - **Custom Port Support**: Allows specifying a custom SMB port (`-p` option), particularly useful in pivoting scenarios.
 - **Complex Password Support**: Handles passwords with spaces or special characters.
 - **Efficient Termination**: Automatically stops all processes once valid credentials are found.
+- **Real-Time Progress Visibility**: Displays progress updates and attempted credentials during execution.
 - **Error Handling**: Validates inputs and provides clear error messages for missing files or parameters.
 
 ## Usage Instructions
@@ -23,8 +24,9 @@ This script is designed for brute-forcing SMB credentials as part of ethical hac
 ```
 
 ### Output
-- Displays failed login attempts.
-- Highlights successful credential combinations.
+- Displays failed login attempts with usernames and passwords tried.
+- Highlights successful credential combinations in real-time.
+- Shows a final message if no valid credentials are found.
 
 ## Dependencies
 ### Required
@@ -50,3 +52,4 @@ This script is intended solely for authorized security testing and CTF exercises
 
 ### Contributions
 Feel free to fork and submit pull requests to improve the script further. Feedback and suggestions are welcome!
+
